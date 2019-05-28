@@ -1,11 +1,14 @@
 body{
-	font-size:17px;
-	 font-family: "Times New Roman", Times, serif;
-	 text-indent: 20px;
+	font-size:19px;
+	font-family: "Times New Roman", Times, serif;
+	text-indent: 20px;
+	background-color:#595647;
+	color:white;
 }
 h1 {
   text-indent: 20px;
   font-weight: bold;
+  color:#9FC8FD;
 }
 p.m1 {
   font-style: italic;
@@ -20,4 +23,29 @@ img {
 }
 .mindent {
     text-indent: 0px;
+}
+p::first-letter{
+	text-transform:uppercase;
+	  font-size: 1.5em;
+}
+span.yellow{
+	color:yellow;
+}
+a{
+	text-decoration:none;
+}
+a:link {
+color: #FF0000;
+}
+/* visited link */
+a:visited {
+color: #00FF00;
+}
+/* mouse over link */
+a:hover {
+color: #FF00FF;
+}
+/* click on a link */
+a:active {
+color: #0000FF;
 }
