@@ -1,0 +1,89 @@
+body{
+    background-image: url("images/silverware.jpg");
+    background-repeat: repeat;
+    color: #404040;
+    font-size: 11pt;
+    font-family: Georgia, Garamond,serif;
+}
+
+h1, h2, h3, h4, h5, h6{
+    color:#A4A400;
+    background-color:#F0F0F0;
+    font-family: Lucida Sans Unicode, Helvetica, Arial,sans-serif;
+    font-size: 19pt;
+    text-align: left;
+    letter-spacing: 0.25em;
+
+}
+h1.center{
+   text-align: center; 
+   display:inline-block;
+   margin: 0;
+   font-size: 22pt;
+}
+h1 span { 
+    background-color: green; 
+}
+ul.nostyle{
+    list-style-type: none;
+    padding-left: 0;
+}
+ul.customli {
+    list-style-image: url("images/pie_icon.gif");
+}
+a{
+    color: #A4A400;
+    text-decoration: underline;
+}
+span.underlined{
+    text-decoration: underline;
+}
+span.strong{
+    font-weight: bold;
+}
+.tooltip {
+    position: relative;
+    display: inline-block;
+    text-decoration: underline;
+  }
+  
+  .tooltip .tooltiptext {
+    visibility: hidden;
+    width: 120px;
+    background-color: #555;
+    color: #fff;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px 0;
+    position: absolute;
+    z-index: 1;
+    bottom: 125%;
+    left: 50%;
+    margin-left: -60px;
+    opacity: 0;
+    transition: opacity 0.3s;
+  }
+  
+  .tooltip .tooltiptext::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    margin-left: -5px;
+    border-width: 5px;
+    border-style: solid;
+    border-color: #555 transparent transparent transparent;
+  }
+  
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+  }
+  pre{
+    background-color:#FBFF9D;
+
+}
+pre.moi{
+    background-color:transparent;
+
+}
