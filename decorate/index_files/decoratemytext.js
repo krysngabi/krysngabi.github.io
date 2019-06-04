@@ -29,7 +29,7 @@ function mBlink(){
         document.getElementById("mtext").style.color = "green";
         document.getElementById("mtext").style.textDecoration = "underline";
         document.body.style.backgroundImage = "url('http://www.cs.washington.edu/education/courses/190m/CurrentQtr/labs/6/hundred-dollar-bill.jpg')";
-        document.body.style.backgroundRepeat="no-repeat"
+        //document.body.style.backgroundRepeat="no-repeat"
     } else {
         document.getElementById("mtext").style.fontWeight = "normal";
         document.body.style.backgroundImage = "url('')";

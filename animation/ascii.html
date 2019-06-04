@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<title>CS472: ASCII Animation Viewer</title>
+ <link rel="stylesheet" href="ascii.css">
+ <script src="ascii.js" type="text/javascript"></script>
+ <script src="animation.js" type="text/javascript"></script>
+ </head>
+ <body>
+     <div id="container">
+
+       <h2>CS472: ASCII Animation Viewer</h2> 
+            <textarea rows="20" cols="80" id="mtext"> </textarea>
+      
+       <div id="controllers">
+            <fieldset id="inl">
+                    <legend>Play Controls:</legend>
+                    <button id="start" onclick="myFunction()" >Start</button>
+                    <button id="stop" onclick="stopAnimation()" >Stop</button>
+                    
+            </fieldset>
+                   <fieldset>
+                        <legend>Animation:</legend>
+                       <select id="anim" onchange="selectedAnimation();">
+                           <option>Blank</option>
+                           <option>EXERCISE</option>
+                           <option>JUGGLER</option>
+                           <option>BIKE</option>
+                           <option>DIVE</option>
+                       </select>
+                       
+                    
+                       </fieldset>
+                       <fieldset>
+                            <legend>Size:</legend>
+                           <select onchange="selectedSize();"  id="msize">
+                                <option value="7pt">Tiny</option>
+                                <option value="10pt">Small</option>
+                                <option selected="selected" value="12pt">Medium</option>
+                                <option value="16pt">Large</option>
+                                <option value="24pt">Extra Large</option>
+					            <option value="32pt">XXL</option>
+                           </select>
+                        
+                           </fieldset>
+                           <fieldset>
+                                <legend>Speed:</legend>
+                                Turbo<input type="checkbox" id="speed"  onclick="hey()">
+                            
+                               </fieldset>
+       </div>
+     </div>
+
+
+ </body>
+
+
+
+ </html>
