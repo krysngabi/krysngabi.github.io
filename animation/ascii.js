@@ -46,21 +46,13 @@ function selectedSize(){
     //document.getElementById("mtext").style.fontSize = "24px";
     el.style.fontSize = fontSize2 + 'px';
 }
-function playAnimation() {
-	document.getElementById("stop").disabled = false;
-	document.getElementById("start").disabled = true;
-	document.getElementById("anim").disabled = true;
-	var textarea = document.getElementById("mtext");
-	var mfrmaes = textarea.value.split("\n");
-	currentAnimation = mfrmaes;
-	interval = setInterval(function() {showAnimation(currentAnimation);}, speed);
-}
+
 function showAnimation(animation) {
 	var textarea = document.getElementById("mtext");
 	var currentFrame = animation.shift();
 	textarea.value = currentFrame;
 	animation.push(currentFrame);
-	currentAnimation = animation;
+	//currentAnimation = animation;
 }
 function stopAnimation() {
 	document.getElementById("start").disabled = false;
@@ -76,5 +68,7 @@ function myFunction() {
 	var textarea = document.getElementById("mtext");
 	var mfrmaes = textarea.value.split("=====\n");
 	currentAnimation = mfrmaes;
-	interval = setInterval(function() {showAnimation(currentAnimation);}, speed);
+	interval = setInterval(function() {
+		showAnimation(currentAnimation);}
+		, speed);
   }
