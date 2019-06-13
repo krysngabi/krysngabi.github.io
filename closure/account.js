@@ -4,11 +4,11 @@ window.onload=function(){
 	document.getElementById("create").onclick=createaccount;
 }
 
-var accountarr=[];
+var accountlist=[];
 var i=0;
 var createaccount=(function clickacc(){
 	
-	var bankaccount=function(){
+	var bankHandler=function(){
 		
 		var acctType=document.getElementById("account").value;
 		var deposit=document.getElementById("deposit").value;
@@ -24,15 +24,15 @@ var createaccount=(function clickacc(){
 			}
 		} 
 		return function(){
-			accountarr.push(bankaccount());
-			displayAccount();
+			accountlist.push(bankHandler());
+			showAccount();
 		}
 		
 		
 	})();
-	var displayAccount=function(){	
+	var showAccount=function(){	
 		var textacc="";
-		for (let acct of accountarr) {
+		for (let acct of accountlist) {
             textacc += `Account: ${acct.getaccttype()}  Balance: ${acct.getdeposit()} \n`;
         }
 		  document.getElementById("mtext").value = textacc;
