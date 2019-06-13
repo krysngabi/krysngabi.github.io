@@ -9,8 +9,25 @@
         $("#start").mouseover(start);
         $("#end").mouseover(finish);
     });
+	
+	  let start = function () {
+        $(".boundary").removeClass("youlose");
+        lostGame = false;
+        illegal = false;
+    }
 
-    let youLost = function (event) {
+  
+
+  
+    let finish = function () {
+        if (!lostGame && !illegal) {
+            setTimeout(function () {
+                alert("You won the Game!!!");
+            }, 50)
+        }
+
+    }
+	  let youLost = function (event) {
         $(".boundary").addClass("youlose");
         if (!lostGame) {
             if (!timerid) {
@@ -22,20 +39,6 @@
         clearTimeout(timerid);
         timerid = null;
         lostGame = true;
-    }
-
-    let start = function () {
-        $(".boundary").removeClass("youlose");
-        lostGame = false;
-        illegal = false;
-    }
-    let finish = function () {
-        if (!lostGame && !illegal) {
-            setTimeout(function () {
-                alert("You won the Game!!!");
-            }, 50)
-        }
-
     }
     let illegalMove = function () {
         illegal = true;
