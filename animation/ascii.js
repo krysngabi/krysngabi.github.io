@@ -1,7 +1,7 @@
-var currentAnimation;
-var speed = 250; 
-var size; 
-var interval;
+"use strict";
+let currentAnimation;
+const speed = 250; 
+let interval;
 
 window.onload = chargement;
 function chargement() {
@@ -27,7 +27,7 @@ function hey(){
     } else {
         clearInterval(interval);
           
-        interval = setInterval(function() {showAnimation(currentAnimation);}, 250);
+        interval = setInterval(function() {showAnimation(currentAnimation);}, speed);
        
     }
 }
